@@ -1,0 +1,14 @@
+/* styles.css */
+
+.custom-thumb-color::-webkit-slider-thumb {
+    background-color: #309c74; /* Change this to the desired color */
+  }
+  
+  .custom-thumb-color::-moz-range-thumb {
+    background-color: #ff0000; /* For Mozilla Firefox */
+  }
+  
+  .custom-thumb-color::-ms-thumb {
+    background-color: #ff0000; /* For Microsoft Edge */
+  }
+  
