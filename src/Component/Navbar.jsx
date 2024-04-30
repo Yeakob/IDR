@@ -1,16 +1,8 @@
 import React from 'react'
-import { useState } from 'react';
 
 const Navbar = () => {
 
 
-
-  const [searchTerm, setSearchTerm] = useState('');
-
-  const handleInputChange = (e) => {
-    setSearchTerm(e.target.value);
-    // Here you can perform any search-related logic, like filtering data based on the search term
-  };
   return (
     <div className="fixed w-full z-10 h-auto py-2 px-4 bg-white flex flex-row justify-between items-center">
 

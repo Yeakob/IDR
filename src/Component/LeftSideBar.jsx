@@ -2,8 +2,8 @@ import React from 'react'
 import "./style.css"
 const LeftSideBar = () => {
     return (
-        <div className='w-[21rem] h-auto'>
-            <div className='flex flex-col text-sm w-full h-auto justify-start items-start rounded-xl p-3 bg-white'>
+        <div className='w-[21rem] h-[37rem] overflow-y-scroll'>
+            <div className='flex flex-col text-sm w-full h-auto  justify-start items-start rounded-xl p-3 bg-white'>
                 
                 <div className='w-full flex justify-center items-center p-4 text-xl'>
                 সেটিংস
