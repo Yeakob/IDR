@@ -1,9 +1,15 @@
-import React from 'react'
-import "./style.css"
+import React, { useState } from 'react'
+import "../index.css"
+
+
 const LeftSideBar = () => {
+
+    const [fsize,setfSize] = useState(19);
+    const [fsize2,setfSize2] = useState(14);
+
     return (
-        <div className='w-[21rem] h-[37rem] overflow-y-scroll'>
-            <div className='flex flex-col text-sm w-full h-auto  justify-start items-start rounded-xl p-3 bg-white'>
+        <div className='w-[21rem] h-[37rem] overflow-y-scroll no-scrollbar'>
+            <div className='flex flex-col text-sm w-full h-auto px-5 justify-start items-start rounded-xl p-3 bg-white'>
                 
                 <div className='w-full flex justify-center items-center p-4 text-xl'>
                 সেটিংস
@@ -16,12 +22,17 @@ const LeftSideBar = () => {
                     <option className='p-2 hover:bg-slate-200 duration-100' value="Me Quran">Me Quran</option>
                 </select>
                 এরাবিক ফন্ট সাইজ
-                <input className='w-full p-5 thumb:bg-green-400' style={{'--thumb-color': '#309c74'}} type="range" name="" id=""  min="19" max="30" />
+                <div className=' w-full flex flex-row justify-center items-center'><input onChange={(e) => { setfSize(e.target.value) }} className='border-none w-[16rem] accent py-5 px-2' type="range" name="" id="" min="18" max="40" /> <span className='pl-2 pb-1 font-semibold font-mono text-slate-600'>{fsize}</span></div>
                 অনুবাদ ফন্ট সাইজ
-                <input className='w-full p-5 ' type="range" name="" id=""  min="19" max="30" />
-                <div className='py-2'>
-                নাইট মোড
-                in
+                <div className='w-full flex flex-row justify-center items-center'><input onChange={(e) => { setfSize2(e.target.value) }} className='border-none w-[16rem] accent py-5 px-2' type="range" name="" id="" min="14" max="25" /> <span className='pl-2 pb-1 font-semibold font-mono text-slate-600'>{fsize2}</span></div>
+                <div className='pb-2 w-full flex flex-row justify-around items-center'>
+                    <div className='w-2/3 flex justify-start'>নাইট মোড</div>
+                    <div className='w-1/3 flex justify-end pl-10'>
+                        <label className="switch">
+                                <input type="checkbox" name="" id="" />
+                                <span className="slider round"></span>
+                        </label>
+                    </div>
                 </div>
             </div>
             <div className='flex flex-col text-sm w-full h-auto justify-start items-start rounded-xl text-start p-5 bg-[#309c74] text-white mt-5'>

@@ -5,7 +5,7 @@ import MainContainer from './Component/MainContainer';
 
 function App() {
   return (
-    <div className="App w-full h-auto bg-white ">
+    <div className=" App w-full overflow-hidden no-scrollbar fixed h-screen bg-white ">
       <Navbar />
       <Sidebar />
       <MainContainer />

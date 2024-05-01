@@ -9,13 +9,13 @@ const MainContainer = () => {
     return (
         <div className='flex flex-row justify-center w-full items-center h-screen rounded-3xl pt-[4.8rem] pl-[6rem] overflow-scroll cursor-pointer'>
             <div className='rounded-3xl rounded-b-none rounded-r-none bg-slate-100 w-full h-full p-5 flex flex-row justify-between items-start '>
-                <div className='w-[22rem] h-full bg-white rounded-xl'>
+                <div className='w-[22rem] h-full fixed bg-white rounded-xl'>
                     <div className='flex flex-row w-full h-auto justify-between border-b-slate-200 border-b-2'>
                         {value === 0 ? <button onClick={() => { setValue(0) }} className='w-full py-4 bg-[#309c74] rounded-tl-xl font-semibold text-white '>বই</button> : <button onClick={() => { setValue(0) }} className='text-slate-700 w-full py-4 font-semibold'>বই</button>}
                         {value === 1 ? <button onClick={() => { setValue(1) }} className='w-full py-4 bg-[#309c74] rounded-tr-xl font-semibold text-white '>অধ্যায়</button> : <button onClick={() => { setValue(1) }} className='text-slate-700 w-full py-4 font-semibold'>অধ্যায়</button>}
                     </div>
-                    <div className="w-full  flex flex-row justify-center items-center mt-5">
-                        <div className="ml-[16rem] fixed ">
+                    <div className="w-full flex flex-row justify-center items-center mt-5">
+                        <div className="fixed ml-[18rem]">
                             <svg class="h-5 w-5 text-slate-900" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z" />  <circle cx="10" cy="10" r="7" />  <line x1="21" y1="21" x2="15" y2="15" /></svg>
                         </div>
 
@@ -203,7 +203,7 @@ const MainContainer = () => {
                     //Middle component 
 
                 }
-                <div className='w-[42rem] h-full bg-slate-50 rounded-xl'>
+                <div className='w-[42rem] ml-[22.7rem] h-full bg-slate-50 rounded-xl'>
                     <div className='flex flex-row w-full h-auto justify-start items-center p-4 text-sm text-slate-600 font-sans border-b-slate-200 border-b-2'>
                     <LiaSwatchbookSolid className='text-3xl' /> {">"} {click} {value===1? <div> {">"} {num} </div> :  <div> </div>}
                     </div>
